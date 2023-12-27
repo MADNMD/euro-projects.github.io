@@ -1,0 +1,56 @@
+.site-footer {
+    background-color: rgba(18, 130, 108, 1);
+}
+
+.site-footer p {
+    text-align: center;
+    color: #CCC;
+    font-size: 0.7em;
+}
+
+.site-footer .container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.contacts span {
+    font-weight: bold;
+    color: #CCC;
+}
+
+.contacts ul li {
+    display: block;
+    color: #CCC;
+}
+
+.about-us ul li {
+    display: block;
+}
+
+.about-us ul li a {
+    text-decoration: none;
+    color: #CCC;
+    position: relative;
+}
+
+.about-us ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: #CCC;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.about-us ul li a:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
