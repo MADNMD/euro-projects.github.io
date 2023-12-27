@@ -1,0 +1,75 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform:  translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.home-site {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.home-site h1 {
+    text-align: center;
+    margin: 1em 0 1em 0;
+    color: rgba(18, 130, 108, 1);
+}
+
+.home-site .container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.logo-list {
+    width: 15em;
+}
+
+.logo-list .interreg img{
+    width: 7em;
+    height: 4em;
+}
+
+.logo-list ul li{
+    display: flex;
+    gap: 0.3em;
+    padding-bottom: 3.2em;
+}
+
+.logo-list ul li a {
+    text-decoration: none;
+    color: rgba(18, 130, 108, 1);
+}
+
+.logo-list ul li a:hover{
+    text-decoration: underline;
+}
+
+.logo-list img {
+    width: 2em;
+    height: 2em;
+}
+
+.home-img {
+    margin-bottom: 2em;
+}
+
+.home-img img {
+    height: 30em;
+    border-radius: 0.5em;
+}
+
+.home-img h2 {
+    text-align: center;
+    margin-top: 1em;
+    color: rgba(18, 130, 108, 1);
+}
+
+/* .home-content .content {
+    text-align: center;
+} */
